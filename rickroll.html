@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <title>HTML Article</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: rgb(71, 92, 92);
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: #ffffff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #5e4bc4;
+            color: white;
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child) {display: none;}
+            .topnav a.icon {
+            float: right;
+            display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {position: relative;}
+            .topnav.responsive .icon {
+            position: absolute;
+            right: 0;
+            top: 0;
+            }
+            .topnav.responsive a {
+            float: none;
+            display: block;
+            text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="rickroll.html" class="active">Meet Rick Astley</a>
+        <a href="#contact">Other Stuff</a>
+        <a href="#about">Other Stuff 2.0</a>
+        <a href="javascript:void(0);" class="icon" onclick="fun()">
+        <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <style>
+        body {
+            background-image: url(astleyRepeating.jpg);
+            overflow-y: hidden;
+        }
+        .astleyImage {
+            position: absolute;
+            z-index: 1;
+            display: block;
+            object-fit: cover;
+            margin: auto;
+            width: 100%; height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        img {
+            width: 100%; height: 100%;
+        }
+        .rickrollVideoPlayer {
+            position: absolute;
+            z-index: auto;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+        .button {
+            text-align: center;
+            position: absolute;
+            z-index: 2;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+        }
+        .buttonStyle {
+            font-size: 36px;
+            background-color: aquamarine;
+            border: 4px, solid,  cadetblue;
+        }
+
+    </style>
+
+    <div class="astleyImage">
+        <img id = "astleyImg" src="mrAstley.jfif" alt="Mr Rick">
+    </div>
+
+    <script>
+    function fun() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+        x.className += " responsive";
+        } else {
+        x.className = "topnav";
+        }
+    }
+    </script>
+
+    <div class="button">
+        <button id="meetIdol" class ="buttonStyle" onclick="meetIdol()">Click to Meet your Idol</button>
+    </div>
+
+
+    <script>
+        function meetIdol() {
+            var buttonObj = document.getElementById("meetIdol");
+            buttonObj.remove();
+            var imageObj = document.getElementById("astleyImg");
+            imageObj.remove();
+            rickrollvideo.play();
+        }
+    </script>
+
+    <div class="rickrollVideoPlayer">
+        <video id = "rickrollvideo" width="720" height="540">
+            <source src="rickrollcroppedvid.mp4" type="video/mp4">
+            Your browser does not support videos :(
+        </video>      
+    </div>
+</body>
+
