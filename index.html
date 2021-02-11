@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <title>HTML Article</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="StyleSheet.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="rickroll.html">Meet Rick Astley</a>
+        <a href="freefilms.html">Free Films</a>
+        <a href="whateverElse.html">Other Stuff</a>
+        <a href="javascript:void(0);" class="icon" onclick="fun()">
+        <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <script>
+    function fun() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+        x.className += " responsive";
+        } else {
+        x.className = "topnav";
+        }
+    }
+    </script>
+
+    <h1>Why HyperText Markup Language is Annoying</h1>
+    <img src="html logo.png" width="150" height="150">
+    <h2>The Repetitive Symbols</h2>
+    <p>While the symbols make HTML easy to read, when writing the language, it takes time and effort. Spending effort on something isn't ever a bad thing, but it feels bad when after 10 minutes of writing you have a paragraph of "<" or ">" signs and about 3 lines of readable text.</p>
+    <hr>
+    <h2>The Confusing Data Tags</h2>
+    <p>These tags are annoying to remember as they aren't real English. While after a bit of coding, you'll remember them easily, right now I dislike them a lot. </p>
+
+</body>
+</html>
