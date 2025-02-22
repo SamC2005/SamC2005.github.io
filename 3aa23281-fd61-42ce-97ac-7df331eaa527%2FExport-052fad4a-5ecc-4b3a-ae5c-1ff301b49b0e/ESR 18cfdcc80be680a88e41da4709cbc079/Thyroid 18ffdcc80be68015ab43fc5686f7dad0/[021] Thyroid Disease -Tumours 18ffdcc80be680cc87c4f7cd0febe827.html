@@ -1,0 +1,685 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>[021] Thyroid Disease -Tumours </title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.highlight-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.block-color-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: undefined; }
+.select-value-color-pink { background-color: rgba(225, 136, 179, 0.27); }
+.select-value-color-purple { background-color: rgba(168, 129, 197, 0.27); }
+.select-value-color-green { background-color: rgba(123, 183, 129, 0.27); }
+.select-value-color-gray { background-color: rgba(84, 72, 49, 0.15); }
+.select-value-color-transparentGray { background-color: undefined; }
+.select-value-color-translucentGray { background-color: undefined; }
+.select-value-color-orange { background-color: rgba(224, 124, 57, 0.27); }
+.select-value-color-brown { background-color: rgba(210, 162, 141, 0.35); }
+.select-value-color-red { background-color: rgba(244, 171, 159, 0.4); }
+.select-value-color-yellow { background-color: rgba(236, 191, 66, 0.39); }
+.select-value-color-blue { background-color: rgba(93, 165, 206, 0.27); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="18ffdcc8-0be6-80cc-87c4-f7cd0febe827" class="page sans"><header><h1 class="page-title"><strong>[021] Thyroid Disease -Tumours </strong></h1><p class="page-description"></p></header><div class="page-body"><h1 id="18ffdcc8-0be6-80ef-a7f3-eadcff19139e" class=""><strong>Thyroid Nodules</strong></h1><p id="18ffdcc8-0be6-802f-be17-dc6132dd8db9" class=""><strong>Clinical history</strong><div class="indented"><ul id="18ffdcc8-0be6-803a-8d06-d1118ff9603e" class="bulleted-list"><li style="list-style-type:disc">Rapid growth, dysphagia, stridor, or lymphadenopathy → suspicious features.</li></ul><ul id="18ffdcc8-0be6-800c-9f74-dd8353975a4e" class="bulleted-list"><li style="list-style-type:disc">Previous radiation exposure (e.g., Chernobyl, Fukushima).</li></ul><ul id="18ffdcc8-0be6-80d3-a268-f6900fd5b95d" class="bulleted-list"><li style="list-style-type:disc">Age: Higher risk in very young (&lt;16) or older patients (&gt;60).</li></ul></div></p><p id="18ffdcc8-0be6-8025-86c6-d5d9e4e6fd93" class=""><strong>Physical examination:</strong><div class="indented"><ul id="18ffdcc8-0be6-80e3-804e-d23043b1ea11" class="bulleted-list"><li style="list-style-type:disc">Palpation for size, consistency, retrosternal extension.</li></ul></div></p><p id="18ffdcc8-0be6-8052-9cda-cbee8b92af7e" class=""><strong>Investigations:</strong><div class="indented"><ul id="18ffdcc8-0be6-80d3-8c0e-d835749ebf8c" class="bulleted-list"><li style="list-style-type:disc">Thyroid function tests (TFTs): Hyperthyroidism reduces but does not rule out malignancy.</li></ul><ul id="18ffdcc8-0be6-8045-9583-db1836bd221b" class="bulleted-list"><li style="list-style-type:disc">Ultrasound (US):<ul id="18ffdcc8-0be6-80a1-abe2-e25158c2d004" class="bulleted-list"><li style="list-style-type:circle">High sensitivity for detecting nodules but cannot distinguish benign vs malignant.</li></ul><ul id="18ffdcc8-0be6-8009-a1e5-dc6a42fb8bd5" class="bulleted-list"><li style="list-style-type:circle">Used to guide Fine Needle Aspiration (FNA).</li></ul></li></ul><ul id="18ffdcc8-0be6-8087-b668-dff19662ca36" class="bulleted-list"><li style="list-style-type:disc">Thyroid scintigraphy:<ul id="18ffdcc8-0be6-80e1-b827-e0e0761f7dfa" class="bulleted-list"><li style="list-style-type:circle">‘Cold’ nodules (non-functioning) require malignancy evaluation.</li></ul><ul id="18ffdcc8-0be6-8076-b2e6-e48e24a98eda" class="bulleted-list"><li style="list-style-type:circle">‘Hot’ nodules (autonomous function) rarely malignant but still 10-15% risk.</li></ul></li></ul><ul id="18ffdcc8-0be6-80bf-83ee-d1e53193f297" class="bulleted-list"><li style="list-style-type:disc">Fine Needle Aspiration (FNA): Gold standard for cytology.</li></ul><ul id="18ffdcc8-0be6-80fc-9cfc-da5fa3d806b2" class="bulleted-list"><li style="list-style-type:disc">CT scan: Used for retrosternal goitre assessment (avoid contrast due to iodine content).</li></ul></div></p><h2 id="18ffdcc8-0be6-8077-9e0c-e72f920569e5" class=""><strong>Benign vs Malignant</strong></h2><p id="18ffdcc8-0be6-8089-82b6-c0115634f082" class=""><strong>Benign (90% of cases):</strong><div class="indented"><ul id="18ffdcc8-0be6-80fd-9332-ec3a07c38773" class="bulleted-list"><li style="list-style-type:disc">Multinodular goitre, follicular adenomas, Hurthle-cell adenomas, Hashimoto’s thyroiditis, cysts.</li></ul><ul id="18ffdcc8-0be6-80f6-90c6-fada196c95f2" class="bulleted-list"><li style="list-style-type:disc">Benign FNA findings: Presence of colloid, uniform nuclei.</li></ul></div></p><p id="18ffdcc8-0be6-8058-b366-c1627739e0f4" class=""><strong>Malignant (10% of cases):</strong><div class="indented"><ul id="18ffdcc8-0be6-80bf-a0ae-cee21c1eefd9" class="bulleted-list"><li style="list-style-type:disc">Papillary carcinoma (most common), follicular carcinoma, medullary carcinoma, anaplastic carcinoma, primary lymphoma.</li></ul><ul id="18ffdcc8-0be6-8074-84ea-ce62ff6d27af" class="bulleted-list"><li style="list-style-type:disc">Suspicious FNA findings: Enlarged follicular cells, Hurthle cells.</li></ul><ul id="18ffdcc8-0be6-806a-8710-e9e664a091da" class="bulleted-list"><li style="list-style-type:disc">Malignant FNA findings: Nuclear variation, inclusion bodies, pleomorphism.</li></ul></div></p><h1 id="18ffdcc8-0be6-80e5-8759-d7088b5d8aa1" class=""><strong>Types of Thyroid Cancers</strong></h1><h3 id="18ffdcc8-0be6-802c-b456-cbb1c0d3eef7" class="">Papillary Thyroid Carcinoma (PTC)</h3><ul id="18ffdcc8-0be6-8079-a5f8-d74d12eed611" class="bulleted-list"><li style="list-style-type:disc">Most common (78%), more common in women (2.5:1).</li></ul><ul id="18ffdcc8-0be6-808b-8a75-e6c30a7e2f52" class="bulleted-list"><li style="list-style-type:disc">Associated with RET/PTC and TRK mutations, BRAF mutation (poor prognosis).</li></ul><ul id="18ffdcc8-0be6-805a-8ecb-f15a43413e7a" class="bulleted-list"><li style="list-style-type:disc">Lymph node metastases present in 1/3 of cases at diagnosis.</li></ul><h3 id="18ffdcc8-0be6-8045-9fe4-dedbe370ae11" class="">Follicular Thyroid Carcinoma (FTC)</h3><ul id="18ffdcc8-0be6-80e1-ba6f-d243f2e1a073" class="bulleted-list"><li style="list-style-type:disc">10% of thyroid cancers, linked to iodine deficiency.</li></ul><ul id="18ffdcc8-0be6-805c-8671-c35b3b224180" class="bulleted-list"><li style="list-style-type:disc">Haematogenous spread → lung and bone metastases common.</li></ul><ul id="18ffdcc8-0be6-80ef-ba7f-fc3402cc8f75" class="bulleted-list"><li style="list-style-type:disc">Cannot be distinguished from follicular adenoma on FNA → requires histological capsular invasion assessment.</li></ul><h3 id="18ffdcc8-0be6-8006-b34a-e36965d0118e" class="">Medullary Thyroid Carcinoma (MTC)</h3><ul id="18ffdcc8-0be6-80e8-886a-c9a2f41c30e6" class="bulleted-list"><li style="list-style-type:disc">Cancer of C-cells, secretes calcitonin and carcinoembryonic antigen (CEA).</li></ul><ul id="18ffdcc8-0be6-808b-bc89-db731280df72" class="bulleted-list"><li style="list-style-type:disc">25% cases hereditary (MEN-2 syndrome, RET proto-oncogene mutations).</li></ul><ul id="18ffdcc8-0be6-80f9-906a-cda380a6d1e6" class="bulleted-list"><li style="list-style-type:disc">Symptoms: Flushing, diarrhoea due to excess calcitonin secretion.</li></ul><h3 id="18ffdcc8-0be6-80d0-9b9b-c9028be6cc9b" class="">Anaplastic Thyroid Carcinoma</h3><ul id="18ffdcc8-0be6-8062-9bb1-ea2c325baf10" class="bulleted-list"><li style="list-style-type:disc">Highly aggressive, poor prognosis (&lt;10% survival at 1 year).</li></ul><ul id="18ffdcc8-0be6-809c-b13a-fa18b0ce4d2f" class="bulleted-list"><li style="list-style-type:disc">Presents as rapidly enlarging mass with compressive symptoms.</li></ul><ul id="18ffdcc8-0be6-802f-a25e-dc820368583a" class="bulleted-list"><li style="list-style-type:disc">No effective chemotherapy; treatment mainly palliative surgery + radiotherapy.</li></ul><h3 id="18ffdcc8-0be6-80bc-a6dd-c1aa9d7c5557" class="">Primary Thyroid Lymphoma</h3><ul id="18ffdcc8-0be6-8085-8e3a-d6038f94b7c0" class="bulleted-list"><li style="list-style-type:disc">Associated with Hashimoto’s thyroiditis.</li></ul><ul id="18ffdcc8-0be6-8011-bd44-c8857c2d0846" class="bulleted-list"><li style="list-style-type:disc">Diagnosed via lymphoid cell infiltration on biopsy.</li></ul><ul id="18ffdcc8-0be6-802d-b0d7-e70cc251e654" class="bulleted-list"><li style="list-style-type:disc">Treated with external beam radiotherapy.</li></ul><h1 id="18ffdcc8-0be6-803e-93bb-fcd7785187e0" class="">Treatments</h1><ul id="18ffdcc8-0be6-80f1-babc-f8fda924255a" class="bulleted-list"><li style="list-style-type:disc">Surgery<ul id="18ffdcc8-0be6-80f8-9780-f2df51757018" class="bulleted-list"><li style="list-style-type:circle">Total thyroidectomy for malignant disease.</li></ul><ul id="18ffdcc8-0be6-8025-b880-f7db435c4ed0" class="bulleted-list"><li style="list-style-type:circle">Indications: Obstruction, malignancy, growing nodule, patient preference.</li></ul></li></ul><ul id="18ffdcc8-0be6-8080-9739-f16c128cda4e" class="bulleted-list"><li style="list-style-type:disc">Radioactive Iodine (I-131)<ul id="18ffdcc8-0be6-8058-905c-f4afc2239e91" class="bulleted-list"><li style="list-style-type:circle">Used post-thyroidectomy for differentiated thyroid cancers (PTC, FTC).</li></ul><ul id="18ffdcc8-0be6-8031-b716-d7bb14b91e36" class="bulleted-list"><li style="list-style-type:circle">Suppresses TSH to prevent recurrence.</li></ul></li></ul><ul id="18ffdcc8-0be6-80e8-af53-ddd71ae5164e" class="bulleted-list"><li style="list-style-type:disc">TSH Suppression Therapy<ul id="18ffdcc8-0be6-803f-a0bc-d417d61babe6" class="bulleted-list"><li style="list-style-type:circle">Long-term levothyroxine to suppress TSH and reduce tumour recurrence risk.</li></ul></li></ul><ul id="18ffdcc8-0be6-8083-a5c6-d2ff345aa239" class="bulleted-list"><li style="list-style-type:disc">Medullary Thyroid Cancer<ul id="18ffdcc8-0be6-80a2-8244-e0db80850ef9" class="bulleted-list"><li style="list-style-type:circle">No role for radioactive iodine (as C-cells do not take up iodine).</li></ul><ul id="18ffdcc8-0be6-80c9-8b8e-c0a9349f649d" class="bulleted-list"><li style="list-style-type:circle">Surgical removal + genetic screening (RET mutations, MEN-2 screening).</li></ul></li></ul><ul id="18ffdcc8-0be6-80cd-bcd7-fe8a7a07b08a" class="bulleted-list"><li style="list-style-type:disc">Anaplastic Carcinoma<ul id="18ffdcc8-0be6-8060-b1f9-d6a7237a1871" class="bulleted-list"><li style="list-style-type:circle">Limited treatment options: Surgery, external beam radiotherapy, tracheostomy for airway obstruction.</li></ul></li></ul><h1 id="18ffdcc8-0be6-80ee-92ef-f4134c90e894" class=""><strong>Prognosis</strong></h1><table id="18ffdcc8-0be6-804e-8252-c093b1b03ce6" class="simple-table"><tbody><tr id="18ffdcc8-0be6-80c2-9b18-f3ec125cc5c6"><td id="]T?J" class=""><strong>Type</strong></td><td id="oenr" class=""><strong>Proportion</strong></td><td id="&lt;bav" class=""><strong>Hereditary?</strong></td><td id="hAu`" class=""><strong>Survival Rate</strong></td></tr><tr id="18ffdcc8-0be6-80f1-b2a8-e761331d3d59"><td id="]T?J" class="">Papillary</td><td id="oenr" class="">78%</td><td id="&lt;bav" class="">5%</td><td id="hAu`" class="">95% at 40 years</td></tr><tr id="18ffdcc8-0be6-8046-812e-e771f3ecff06"><td id="]T?J" class="">Follicular</td><td id="oenr" class="">10%</td><td id="&lt;bav" class="">No</td><td id="hAu`" class="">80% at 40 years</td></tr><tr id="18ffdcc8-0be6-80e0-9c40-dea4eb3bca66"><td id="]T?J" class="">Medullary</td><td id="oenr" class="">7.5%</td><td id="&lt;bav" class="">25% (MEN-2)</td><td id="hAu`" class="">65% at 10 years</td></tr><tr id="18ffdcc8-0be6-808f-8cdd-d5fc90ab6cb5"><td id="]T?J" class="">Anaplastic</td><td id="oenr" class="">4.5%</td><td id="&lt;bav" class="">No</td><td id="hAu`" class="">&lt;10% at 1 year</td></tr><tr id="18ffdcc8-0be6-8053-bdfa-fac2aa5baed4"><td id="]T?J" class="">Lymphoma</td><td id="oenr" class="">Rare</td><td id="&lt;bav" class="">No</td><td id="hAu`" class="">80-90% at 5 years</td></tr></tbody></table><h1 id="18ffdcc8-0be6-80be-97a1-e32e585f5b87" class="">Summary</h1><ul id="18ffdcc8-0be6-801d-8d20-f52f4d3d8e02" class="bulleted-list"><li style="list-style-type:disc">Thyroid nodules are common, but most are benign.</li></ul><ul id="18ffdcc8-0be6-80c3-b146-f877101279aa" class="bulleted-list"><li style="list-style-type:disc">FNA is the gold standard for assessing malignancy.</li></ul><ul id="18ffdcc8-0be6-801a-a283-fa20a1df71fb" class="bulleted-list"><li style="list-style-type:disc">Papillary carcinoma is the most common thyroid cancer, with an excellent prognosis.</li></ul><ul id="18ffdcc8-0be6-8072-93f9-d6af23cc508f" class="bulleted-list"><li style="list-style-type:disc">Follicular carcinoma spreads via the bloodstream, requiring whole tumour evaluation.</li></ul><ul id="18ffdcc8-0be6-805a-b1a0-e1cce0e45026" class="bulleted-list"><li style="list-style-type:disc">Medullary carcinoma is linked to MEN-2 and requires genetic screening.</li></ul><ul id="18ffdcc8-0be6-8074-97d1-f140f7d87861" class="bulleted-list"><li style="list-style-type:disc">Anaplastic carcinoma has the worst prognosis and limited treatment options.</li></ul><p id="18ffdcc8-0be6-8020-af71-f68a0f3b2c11" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

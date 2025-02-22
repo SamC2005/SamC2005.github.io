@@ -1,0 +1,685 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Hormonal Control of Reproduction II</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.highlight-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.block-color-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: undefined; }
+.select-value-color-pink { background-color: rgba(225, 136, 179, 0.27); }
+.select-value-color-purple { background-color: rgba(168, 129, 197, 0.27); }
+.select-value-color-green { background-color: rgba(123, 183, 129, 0.27); }
+.select-value-color-gray { background-color: rgba(84, 72, 49, 0.15); }
+.select-value-color-transparentGray { background-color: undefined; }
+.select-value-color-translucentGray { background-color: undefined; }
+.select-value-color-orange { background-color: rgba(224, 124, 57, 0.27); }
+.select-value-color-brown { background-color: rgba(210, 162, 141, 0.35); }
+.select-value-color-red { background-color: rgba(244, 171, 159, 0.4); }
+.select-value-color-yellow { background-color: rgba(236, 191, 66, 0.39); }
+.select-value-color-blue { background-color: rgba(93, 165, 206, 0.27); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="197fdcc8-0be6-80a6-a28a-c66e6000ef06" class="page sans"><header><h1 class="page-title">Hormonal Control of Reproduction II</h1><p class="page-description"></p></header><div class="page-body"><ul id="197fdcc8-0be6-80f7-a022-ec77d0288349" class="bulleted-list"><li style="list-style-type:disc">Describe the changes that occur as cell change from primordial germ cells into gametes describe how the morphology of gametes relates to the established roles in fertilization.</li></ul><hr id="197fdcc8-0be6-801c-991d-f06f5d1edde3"/><ul id="197fdcc8-0be6-80bf-9f01-dd504d63ac61" class="bulleted-list"><li style="list-style-type:disc">Describe the timeline of development of the zygote until implantation.</li></ul><hr id="197fdcc8-0be6-80cf-a497-c2af9a6d5a8d"/><ul id="197fdcc8-0be6-80ac-a45c-fc58c0949db2" class="bulleted-list"><li style="list-style-type:disc">Establish the changes that need occur to maintain pregnancy</li></ul><hr id="197fdcc8-0be6-80a3-825f-ffb7ba328a01"/><h1 id="197fdcc8-0be6-8053-8cd8-db1936d66899" class=""><strong>Development of Sexual Phenotype</strong></h1><ul id="197fdcc8-0be6-8073-a0f5-df7f229c6b4c" class="bulleted-list"><li style="list-style-type:disc"><strong>At Fertilisation:</strong><ul id="197fdcc8-0be6-8003-9e91-e787119c55a3" class="bulleted-list"><li style="list-style-type:circle">The sperm (carrying either an X or Y chromosome) fuses with an X-bearing ovum</li></ul><ul id="197fdcc8-0be6-80a9-a079-c3703ea0cbd7" class="bulleted-list"><li style="list-style-type:circle">This event establishes the genetic sex</li></ul></li></ul><ul id="197fdcc8-0be6-80c2-8c76-e822380bac00" class="bulleted-list"><li style="list-style-type:disc"><strong>Around 4 Weeks Gestation:</strong><ul id="197fdcc8-0be6-801f-a2d2-d9b4ca82711a" class="bulleted-list"><li style="list-style-type:circle">Proliferation of cells in the urogenital ridge creates a bipotential (undifferentiated) gonad</li></ul></li></ul><ul id="197fdcc8-0be6-8062-9017-d1a324c6bf3b" class="bulleted-list"><li style="list-style-type:disc"><strong>Around 7 Weeks Gestation (Sex Determination):</strong><ul id="197fdcc8-0be6-8024-bb09-f8609fe1db93" class="bulleted-list"><li style="list-style-type:circle">In a 46,XY embryo, the gonad differentiates into a testis</li></ul><ul id="197fdcc8-0be6-8035-9488-d03ec614bc07" class="bulleted-list"><li style="list-style-type:circle">In a 46,XX embryo, the gonad remains as an ovary</li></ul></li></ul><h1 id="197fdcc8-0be6-80dd-85ac-c65e99b4b1e7" class=""><strong>Human Life Cycle, Gamete Numbers, and Female Fecundity</strong></h1><ul id="197fdcc8-0be6-80c8-a734-ed99802fc488" class="bulleted-list"><li style="list-style-type:disc"><strong>Human Life Cycle Overview:</strong><ul id="197fdcc8-0be6-8051-b84e-c2c3dd6ac5dc" class="bulleted-list"><li style="list-style-type:circle">At birth, individuals are physically and sexually immature</li></ul><ul id="197fdcc8-0be6-8089-a242-f0a3ec0bdc22" class="bulleted-list"><li style="list-style-type:circle">Sexual maturity is achieved during adolescence</li></ul></li></ul><ul id="197fdcc8-0be6-80d5-94d8-fd99fbcdaaec" class="bulleted-list"><li style="list-style-type:disc"><strong>Differences in Fecundity:</strong><ul id="197fdcc8-0be6-8011-abbf-df3371910875" class="bulleted-list"><li style="list-style-type:circle"><strong>Males:</strong> Once mature, sperm production is maintained throughout most of life</li></ul><ul id="197fdcc8-0be6-802e-9796-dcf7f33abf4f" class="bulleted-list"><li style="list-style-type:circle"><strong>Females:</strong> Fecundity is time-limited. Egg quality declines markedly after about 35 years, ending at menopause (~50 years)</li></ul></li></ul><ul id="197fdcc8-0be6-803e-acb9-c4718142867f" class="bulleted-list"><li style="list-style-type:disc"><strong>Gamete Numbers and Egg Wastage:</strong><ul id="197fdcc8-0be6-8044-b246-fcbe835becff" class="bulleted-list"><li style="list-style-type:circle">Unlike external fertilisers (e.g. frogs), mammals fertilise internally; thus, only one or two eggs are released per cycle</li></ul><ul id="197fdcc8-0be6-8034-abfb-e116fda80fa5" class="bulleted-list"><li style="list-style-type:circle">A female foetus peaks with around 7 million oocytes at 6 months of foetal life</li></ul><ul id="197fdcc8-0be6-8044-8db9-e4e0e6e489c2" class="bulleted-list"><li style="list-style-type:circle">Most oocytes are lost (atresia) during foetal, neonatal, and pubertal life, leaving only a few hundred available during the reproductive years<figure id="199fdcc8-0be6-80dd-8cd6-c06d66578b4c" class="image"><a href="Hormonal%20Control%20of%20Reproduction%20II%20197fdcc80be680a6a28ac66e6000ef06/Screenshot_2025-02-13_at_18.27.09.png"><img style="width:480px" src="Hormonal%20Control%20of%20Reproduction%20II%20197fdcc80be680a6a28ac66e6000ef06/Screenshot_2025-02-13_at_18.27.09.png"/></a></figure></li></ul></li></ul><h1 id="197fdcc8-0be6-8015-b7b7-ceaaaaf82109" class=""><strong>Spermatogenesis</strong></h1><ul id="197fdcc8-0be6-8013-854d-ece8ea1d0b5b" class="bulleted-list"><li style="list-style-type:disc"><strong>Process Overview:</strong><ul id="197fdcc8-0be6-8071-80c3-e78c5cfe9fd2" class="bulleted-list"><li style="list-style-type:circle">Primordial germ cells arrest as spermatogonia until puberty</li></ul><ul id="197fdcc8-0be6-8042-aefd-c92718179aa0" class="bulleted-list"><li style="list-style-type:circle"><strong>Spermatogenesis Stages:</strong><ul id="197fdcc8-0be6-80e8-b30c-d8378b18a1f3" class="bulleted-list"><li style="list-style-type:square">A basal spermatogonial stem cell divides mitotically to renew itself and produce a primary spermatocyte</li></ul><ul id="197fdcc8-0be6-80e3-83c4-ee69697819fb" class="bulleted-list"><li style="list-style-type:square">The primary spermatocyte enters the adluminal compartment and undergoes the first meiotic division to form haploid secondary spermatocytes</li></ul><ul id="197fdcc8-0be6-80cb-a4c6-df0b96d488b3" class="bulleted-list"><li style="list-style-type:square">Secondary spermatocytes quickly undergo the second meiotic division, producing spermatids that mature into spermatozoa</li></ul></li></ul><ul id="197fdcc8-0be6-806d-ad72-eed6db760d75" class="bulleted-list"><li style="list-style-type:circle">Mature spermatozoa are released into the lumen and travel to the epididymis for storage until ejaculation</li></ul></li></ul><figure id="199fdcc8-0be6-8013-a4ef-fea55c7cac59" class="image" style="text-align:center"><a href="Hormonal%20Control%20of%20Reproduction%20II%20197fdcc80be680a6a28ac66e6000ef06/113a885f-b7d1-4d22-97ab-3cc3edfc763a.png"><img style="width:485.6852791878173px" src="Hormonal%20Control%20of%20Reproduction%20II%20197fdcc80be680a6a28ac66e6000ef06/113a885f-b7d1-4d22-97ab-3cc3edfc763a.png"/></a></figure><h1 id="197fdcc8-0be6-80ef-ade2-db2c5dccfb19" class=""><strong>Gamete Quality and Fertilisation Requirements</strong></h1><ul id="197fdcc8-0be6-80b0-83aa-e7d67237fc79" class="bulleted-list"><li style="list-style-type:disc"><strong>Gamete Quality:</strong><ul id="197fdcc8-0be6-80d6-a4f8-e1c5f6b65607" class="bulleted-list"><li style="list-style-type:circle">~ 40% of sub-fertility cases are due to male factors (e.g. poor sperm quality)</li></ul><ul id="197fdcc8-0be6-809d-80c3-d0e70d0237b8" class="bulleted-list"><li style="list-style-type:circle">~ 20% are related to poor egg quality</li></ul><ul id="197fdcc8-0be6-8029-9cff-e0f946dbbc4d" class="bulleted-list"><li style="list-style-type:circle">~ 30% of miscarriages are linked to chromosomal errors in the egg</li></ul></li></ul><ul id="197fdcc8-0be6-803a-aef9-da9aff7094cb" class="bulleted-list"><li style="list-style-type:disc"><strong>Fertilisation Requires High-Quality Gametes:</strong><ul id="197fdcc8-0be6-80eb-94b2-dc2ea200c9e5" class="bulleted-list"><li style="list-style-type:circle">The integrity and functionality of both sperm and egg are essential for successful fertilisation</li></ul></li></ul><h1 id="197fdcc8-0be6-80b4-9895-fa17b373f2e1" class=""><strong>Fertilisation Process</strong></h1><h2 id="197fdcc8-0be6-80f0-965a-d80878cc8fd7" class=""><strong>Window of Opportunity</strong></h2><ul id="197fdcc8-0be6-806e-bfe6-ddad6400c4e1" class="bulleted-list"><li style="list-style-type:disc"><strong>Timing for Fertilisation:</strong><ul id="197fdcc8-0be6-80d2-a222-c583756a7d2c" class="bulleted-list"><li style="list-style-type:circle">Sperm are viable for about 48 hours after deposition</li></ul><ul id="197fdcc8-0be6-800f-92c2-fbf5396b4338" class="bulleted-list"><li style="list-style-type:circle">The secondary oocyte remains viable for approximately 24 hours post-ovulation</li></ul><ul id="197fdcc8-0be6-8097-98da-c753cd06b8c9" class="bulleted-list"><li style="list-style-type:circle">Fertilisation is most likely to occur during a ~3-day window (roughly 2 days before to 1 day after ovulation)</li></ul></li></ul><h2 id="197fdcc8-0be6-80a6-9520-dcb44e4cb5bf" class=""><strong>Sperm Changes and Capacitation</strong></h2><ul id="197fdcc8-0be6-80ce-97ef-cae1147b278e" class="bulleted-list"><li style="list-style-type:disc"><strong>Sperm Movement:</strong><ul id="197fdcc8-0be6-80a3-a502-de21d7c4b0ca" class="bulleted-list"><li style="list-style-type:circle">Sperm use flagellar movement to swim from the vagina into the cervical canal</li></ul><ul id="197fdcc8-0be6-804a-a8f3-e4837bff1037" class="bulleted-list"><li style="list-style-type:circle">Contractions of the uterus and oviduct assist in propelling sperm further</li></ul><ul id="197fdcc8-0be6-807a-9f3b-f42385470324" class="bulleted-list"><li style="list-style-type:circle"><strong>Prostaglandins in Semen:</strong><ul id="197fdcc8-0be6-80c8-a069-f9bbc674458b" class="bulleted-list"><li style="list-style-type:square">These compounds stimulate uterine contractions, aiding sperm in reaching the oviduct</li></ul></li></ul></li></ul><ul id="197fdcc8-0be6-8094-855a-eb3345bce1e2" class="bulleted-list"><li style="list-style-type:disc"><strong>Capacitation:</strong><ul id="197fdcc8-0be6-8078-84b4-d47860b90a56" class="bulleted-list"><li style="list-style-type:circle">Spermatozoa require time in the female reproductive tract to achieve full fertilising capacity</li></ul><ul id="197fdcc8-0be6-80aa-b5be-c94d5660a354" class="bulleted-list"><li style="list-style-type:circle">This involves:<ul id="197fdcc8-0be6-80d5-841e-d0371bf34540" class="bulleted-list"><li style="list-style-type:square">A change to a hyperactivated motility state</li></ul><ul id="197fdcc8-0be6-809d-9d9f-e600a4c16761" class="bulleted-list"><li style="list-style-type:square">Initiation of the acrosome reaction</li></ul></li></ul></li></ul><h2 id="197fdcc8-0be6-80be-8be2-f09c72dcdafb" class=""><strong>Sperm Penetration and Acrosome Reaction</strong></h2><h3 id="197fdcc8-0be6-808b-9853-cac945e86f3a" class=""><strong>Layers to Penetrate:</strong></h3><ul id="197fdcc8-0be6-8022-b56f-c4846e7db161" class="bulleted-list"><li style="list-style-type:disc"><strong>Corona Radiata:</strong> The layer of granulosa cells surrounding the secondary oocyte</li></ul><ul id="197fdcc8-0be6-80f0-b32e-f8c50586d2a9" class="bulleted-list"><li style="list-style-type:disc"><strong>Zona Pellucida:</strong> A glycoprotein layer that contains the sperm receptor ZP3</li></ul><figure id="199fdcc8-0be6-8072-8e58-d7351b393b5e" class="image"><a href="Hormonal%20Control%20of%20Reproduction%20II%20197fdcc80be680a6a28ac66e6000ef06/image.png"><img style="width:710px" src="Hormonal%20Control%20of%20Reproduction%20II%20197fdcc80be680a6a28ac66e6000ef06/image.png"/></a></figure><h3 id="197fdcc8-0be6-80e8-be4b-d644ff7ec50c" class=""><strong>Acrosome Reaction:</strong></h3><ul id="197fdcc8-0be6-80d5-a614-e301364bcab2" class="bulleted-list"><li style="list-style-type:disc">The acrosome, located over the sperm head, releases enzymes (e.g. hyaluronidase and acrosin) that digest the zona pellucida</li></ul><ul id="197fdcc8-0be6-80da-b88b-e74903797b31" class="bulleted-list"><li style="list-style-type:disc">Binding of ZP3 to receptors on the sperm triggers this reaction</li></ul><ul id="197fdcc8-0be6-80b4-85de-e2fc13f6b95b" class="bulleted-list"><li style="list-style-type:disc">Although many sperm undergo the acrosome reaction, only the first sperm to penetrate the zona and reach the oocyte’s plasma membrane can fuse, initiating fertilisation</li></ul><ul id="197fdcc8-0be6-80ff-9dd7-c6bd05c81237" class="bulleted-list"><li style="list-style-type:disc"><strong>Polyspermy Prevention:</strong><ul id="197fdcc8-0be6-805f-8ebb-cf8d0c2ae2a7" class="bulleted-list"><li style="list-style-type:circle">Fusion triggers a rapid depolarisation of the oocyte membrane, preventing additional sperm from entering</li></ul></li></ul><h2 id="197fdcc8-0be6-80b1-aa48-f95b3139f9e1" class=""><strong>Pronuclei Formation and Zygote Creation</strong></h2><ul id="197fdcc8-0be6-8087-9266-c0da76fe9d72" class="bulleted-list"><li style="list-style-type:disc"><strong>Post-Fusion Events:</strong><ul id="197fdcc8-0be6-800b-9a0d-ee812b5cdd18" class="bulleted-list"><li style="list-style-type:circle">Once a sperm fuses with the oocyte, the oocyte completes meiosis II, dividing into a larger ovum and a small second polar body</li></ul><ul id="197fdcc8-0be6-80c3-870f-ff8fcdfb4bdd" class="bulleted-list"><li style="list-style-type:circle">The sperm nucleus forms the male pronucleus, while the oocyte nucleus forms the female pronucleus</li></ul><ul id="197fdcc8-0be6-8063-88e5-f3af20452e24" class="bulleted-list"><li style="list-style-type:circle">Fusion of these pronuclei restores the diploid number (46 chromosomes), creating the zygote</li></ul></li></ul><ul id="197fdcc8-0be6-8042-847a-c8b511ef2a51" class="bulleted-list"><li style="list-style-type:disc"><strong>Fertilisation as a Protracted Process:</strong><ul id="197fdcc8-0be6-80d8-a3de-ec6f493f393b" class="bulleted-list"><li style="list-style-type:circle">Although often simplified as a single event, fertilisation involves multiple hours of sequential steps from sperm transport to pronuclear fusion</li></ul></li></ul><h1 id="197fdcc8-0be6-80e3-97b0-dcdc7e2a1432" class=""><strong>Establishment of Pregnancy</strong></h1><h3 id="197fdcc8-0be6-80ac-8a99-efd027d73202" class=""><strong>Conceptus Communication and Pre-Implantation Development</strong></h3><ul id="197fdcc8-0be6-80e9-a3b4-c80818efb310" class="bulleted-list"><li style="list-style-type:disc"><strong>Conceptus Signalling:</strong><ul id="197fdcc8-0be6-8095-bf4c-f905c6a5ca6b" class="bulleted-list"><li style="list-style-type:circle">After fertilisation, the two-cell conceptus must signal its presence to the mother to transition her reproductive system from a cyclic to a pregnant state</li></ul><ul id="197fdcc8-0be6-803e-93d7-e09860080d38" class="bulleted-list"><li style="list-style-type:circle">This signalling is critical to prevent the normal regression (luteolysis) of the corpus luteum</li></ul><ul id="197fdcc8-0be6-8040-ac46-d9e5baddc707" class="bulleted-list"><li style="list-style-type:circle">Failure in signalling would lead to a fall in progesterone and the loss of the conceptus</li></ul></li></ul><ul id="197fdcc8-0be6-806e-a69e-dedc7f04ae74" class="bulleted-list"><li style="list-style-type:disc"><strong>Pre-Implantation Period:</strong><ul id="197fdcc8-0be6-80b8-a847-d5ab0c84178c" class="bulleted-list"><li style="list-style-type:circle">The conceptus remains in the oviduct for several days before transfer into the uterus</li></ul><ul id="197fdcc8-0be6-8008-8ea4-c9a33eb3f05d" class="bulleted-list"><li style="list-style-type:circle">This transfer is facilitated by the rising ratio of progesterone to oestrogen during the early luteal phase</li></ul></li></ul><h3 id="197fdcc8-0be6-8092-b700-e7a8cf80a2c9" class=""><strong>Early Development Timeline</strong></h3><table id="197fdcc8-0be6-800d-b8b7-ffefe388de85" class="simple-table"><tbody><tr id="197fdcc8-0be6-80e9-92bd-fd9d5e3ee688"><td id="LmHf" class=""><strong>Event</strong></td><td id="ic]o" class=""><strong>Time (Days)</strong></td></tr><tr id="197fdcc8-0be6-80d6-9ac0-d81de2c3be9f"><td id="LmHf" class="">Cleavage to four cells</td><td id="ic]o" class="">~2</td></tr><tr id="197fdcc8-0be6-80ad-afb6-c8d30929fa24"><td id="LmHf" class="">Major burst of transcription (4-8 cells)</td><td id="ic]o" class="">~4–8</td></tr><tr id="197fdcc8-0be6-80ff-a80e-f3f6266671ba"><td id="LmHf" class="">Conceptus enters uterus</td><td id="ic]o" class="">~3.5</td></tr><tr id="197fdcc8-0be6-80f7-924f-f637e05eda83"><td id="LmHf" class="">Blastocyst formation</td><td id="ic]o" class="">~4.5</td></tr><tr id="197fdcc8-0be6-805b-9854-e3714046a413"><td id="LmHf" class="">Attachment to endometrium</td><td id="ic]o" class="">~7–9</td></tr><tr id="197fdcc8-0be6-80f2-83ed-cffe79ae970b"><td id="LmHf" class="">Luteal regression (if no pregnancy)</td><td id="ic]o" class="">~12–14</td></tr><tr id="197fdcc8-0be6-808a-aa79-e4e66ab19833"><td id="LmHf" class="">Total duration of pregnancy</td><td id="ic]o" class="">270–290</td></tr></tbody></table><figure id="199fdcc8-0be6-803e-8c94-e3aa6a485588" class="image"><a href="Hormonal%20Control%20of%20Reproduction%20II%20197fdcc80be680a6a28ac66e6000ef06/7a2cd058-7b5f-4975-a21a-f32876e06c05.png"><img style="width:441.9607843137255px" src="Hormonal%20Control%20of%20Reproduction%20II%20197fdcc80be680a6a28ac66e6000ef06/7a2cd058-7b5f-4975-a21a-f32876e06c05.png"/></a></figure><h3 id="197fdcc8-0be6-8054-839c-de4cbeb9fa43" class=""><strong>Implantation Process</strong></h3><ul id="197fdcc8-0be6-8041-808a-f1034206ec02" class="bulleted-list"><li style="list-style-type:disc"><strong>Attachment Phases:</strong><ul id="197fdcc8-0be6-8065-bac8-d51b04ed1a55" class="bulleted-list"><li style="list-style-type:circle"><strong>Close Apposition:</strong> The blastocyst aligns closely with the endometrial surface</li></ul><ul id="197fdcc8-0be6-8090-b4c0-cc4ac89fc604" class="bulleted-list"><li style="list-style-type:circle"><strong>Adherence:</strong> The endometrium and blastocyst interact more intimately, with proteolytic enzymes (from trophoblast cells or uterine secretions) removing the zona pellucida</li></ul></li></ul><ul id="197fdcc8-0be6-80bf-bcae-e745672d32cd" class="bulleted-list"><li style="list-style-type:disc"><strong>Invasive Implantation:</strong><ul id="197fdcc8-0be6-8016-9a0b-f0dc0e96bc11" class="bulleted-list"><li style="list-style-type:circle">In humans, the blastocyst rapidly invades the endometrial tissue</li></ul><ul id="197fdcc8-0be6-8062-8e67-c90a8522f342" class="bulleted-list"><li style="list-style-type:circle">The trophoblast erodes the surface epithelium, and the conceptus embeds within the maternal stroma</li></ul><ul id="197fdcc8-0be6-805d-940f-f76798cac3bf" class="bulleted-list"><li style="list-style-type:circle">The depth of invasion may vary, and in some conditions, the maternal epithelium can even reform over the implanted conceptus (interstitial implantation)</li></ul><figure id="199fdcc8-0be6-80fc-9120-ca1171f476da" class="image"><a href="Hormonal%20Control%20of%20Reproduction%20II%20197fdcc80be680a6a28ac66e6000ef06/image%201.png"><img style="width:682px" src="Hormonal%20Control%20of%20Reproduction%20II%20197fdcc80be680a6a28ac66e6000ef06/image%201.png"/></a></figure></li></ul><h1 id="197fdcc8-0be6-8012-b815-d9188d295047" class=""><strong>Hormonal Maintenance of Pregnancy</strong></h1><h3 id="197fdcc8-0be6-8031-92b2-c11dcfb8325b" class=""><strong>Maternal Recognition of Pregnancy and hCG Role</strong></h3><div id="199fdcc8-0be6-80ae-a23f-d38c2287d6ec" class="column-list"><div id="199fdcc8-0be6-801b-80c9-f71ca81d6107" style="width:50.000000000000014%" class="column"><ul id="197fdcc8-0be6-8041-8440-f1bee0132c2f" class="bulleted-list"><li style="list-style-type:disc"><strong>Conceptus Signalling:</strong><ul id="197fdcc8-0be6-80c7-835f-ca3d0428db2c" class="bulleted-list"><li style="list-style-type:circle">Once implantation begins, the conceptus must signal its presence to prevent the normal luteolysis that would occur in a non-pregnant cycle</li></ul><ul id="197fdcc8-0be6-8078-b6a5-ea3ae87dbf48" class="bulleted-list"><li style="list-style-type:circle">This is achieved by the secretion of <strong>human chorionic gonadotropin (hCG)</strong> by the developing trophoblast</li></ul></li></ul></div><div id="199fdcc8-0be6-8081-bb89-c1fdfc411575" style="width:50%" class="column"><figure id="199fdcc8-0be6-8070-9195-c7c2a3b0e9d5" class="image" style="text-align:left"><a href="Hormonal%20Control%20of%20Reproduction%20II%20197fdcc80be680a6a28ac66e6000ef06/Screenshot_2025-02-13_at_18.55.27.png"><img style="width:528px" src="Hormonal%20Control%20of%20Reproduction%20II%20197fdcc80be680a6a28ac66e6000ef06/Screenshot_2025-02-13_at_18.55.27.png"/></a></figure></div></div><ul id="197fdcc8-0be6-80e1-84cc-f272eadd6bda" class="bulleted-list"><li style="list-style-type:disc"><strong>hCG Details:</strong><ul id="197fdcc8-0be6-8059-a809-f35d02bac5c8" class="bulleted-list"><li style="list-style-type:circle">hCG is similar to luteinising hormone (LH) and binds to LH receptors, thereby maintaining the corpus luteum and its progesterone production</li></ul><ul id="197fdcc8-0be6-809a-a266-e718b524d053" class="bulleted-list"><li style="list-style-type:circle">High levels of hCG are associated with symptoms such as severe early morning vomiting (hyperemesis gravidarum)</li></ul><ul id="197fdcc8-0be6-80fe-a293-c8698c6ed29b" class="bulleted-list"><li style="list-style-type:circle">hCG is also the hormone detected by most pregnancy tests (urine assays), often as early as 3 weeks after fertilisation</li></ul></li></ul><h3 id="197fdcc8-0be6-8084-9c8e-e9a7c0952cfe" class=""><strong>Corpus Luteum Function and Transition to Placental Support</strong></h3><ul id="197fdcc8-0be6-80f2-ba92-fc610e1f6bbf" class="bulleted-list"><li style="list-style-type:disc"><strong>In the Non-Pregnant State:</strong><ul id="197fdcc8-0be6-801c-b766-c96902bcdac1" class="bulleted-list"><li style="list-style-type:circle">The corpus luteum lasts approximately 14 days before regressing into the corpus albicans due to lack of luteotrophic support</li></ul></li></ul><ul id="197fdcc8-0be6-80a9-b998-c3bbd4221b36" class="bulleted-list"><li style="list-style-type:disc"><strong>In Early Pregnancy:</strong><ul id="197fdcc8-0be6-8088-8661-c24ab009bea9" class="bulleted-list"><li style="list-style-type:circle">Within about 2 weeks of fertilisation, hCG from the conceptus maintains the corpus luteum, ensuring continued production of progesterone</li></ul><ul id="197fdcc8-0be6-800f-992b-dea3b2b457fa" class="bulleted-list"><li style="list-style-type:circle">After another 2–3 weeks, the conceptus begins synthesising its own steroidal hormones</li></ul></li></ul><ul id="197fdcc8-0be6-80dc-9459-cd3b025ae394" class="bulleted-list"><li style="list-style-type:disc"><strong>Feto-Placental Unit:</strong><ul id="197fdcc8-0be6-8039-881e-feaf3338ba2a" class="bulleted-list"><li style="list-style-type:circle">By the end of the first trimester, the placenta and foetus together form a feto-placental unit that takes over the production of progesterone</li></ul><ul id="197fdcc8-0be6-80d3-8051-d0d850348570" class="bulleted-list"><li style="list-style-type:circle">This transition reduces the reliance on the corpus luteum, which becomes less significant as the pregnancy progresses</li></ul></li></ul><p id="199fdcc8-0be6-808d-900d-e3b048039f72" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

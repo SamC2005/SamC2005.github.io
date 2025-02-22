@@ -1,0 +1,698 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Pathophysiology of diabetes</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.highlight-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.block-color-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: undefined; }
+.select-value-color-pink { background-color: rgba(225, 136, 179, 0.27); }
+.select-value-color-purple { background-color: rgba(168, 129, 197, 0.27); }
+.select-value-color-green { background-color: rgba(123, 183, 129, 0.27); }
+.select-value-color-gray { background-color: rgba(84, 72, 49, 0.15); }
+.select-value-color-transparentGray { background-color: undefined; }
+.select-value-color-translucentGray { background-color: undefined; }
+.select-value-color-orange { background-color: rgba(224, 124, 57, 0.27); }
+.select-value-color-brown { background-color: rgba(210, 162, 141, 0.35); }
+.select-value-color-red { background-color: rgba(244, 171, 159, 0.4); }
+.select-value-color-yellow { background-color: rgba(236, 191, 66, 0.39); }
+.select-value-color-blue { background-color: rgba(93, 165, 206, 0.27); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="18cfdcc8-0be6-8037-8488-d2d97835873d" class="page sans"><header><div class="page-header-icon undefined"><span class="icon">💉</span></div><h1 class="page-title">Pathophysiology of diabetes</h1><p class="page-description"></p></header><div class="page-body"><ul id="18cfdcc8-0be6-8015-aa0a-d5e0040ef6c0" class="bulleted-list"><li style="list-style-type:disc">describe the differences between insulin-dependent and non-insulin dependent diabetes</li></ul><ul id="18cfdcc8-0be6-8099-b481-f4b0885778d0" class="bulleted-list"><li style="list-style-type:disc">explain the mechanisms underlying the metabolic consequences of insulin deficiency</li></ul><ul id="18cfdcc8-0be6-805c-875c-f6f43751053b" class="bulleted-list"><li style="list-style-type:disc">explain the mechanisms underlying the long term effects of diabetes</li></ul><p id="18cfdcc8-0be6-803e-874a-c8ccafb8805a" class="">
+</p><h1 id="18cfdcc8-0be6-8001-9730-f39fa2157440" class="">Type 1 Diabetes Mellitus</h1><p id="18cfdcc8-0be6-805b-b358-e2cb6ad1b3d9" class="">
+</p><figure id="18cfdcc8-0be6-8081-a9b6-d22a48592403" class="image" style="text-align:left"><a href="Pathophysiology%20of%20diabetes%2018cfdcc80be680378488d2d97835873d/Screenshot_2025-01-31_at_13.38.41.png"><img style="width:336px" src="Pathophysiology%20of%20diabetes%2018cfdcc80be680378488d2d97835873d/Screenshot_2025-01-31_at_13.38.41.png"/></a></figure><p id="18cfdcc8-0be6-80c5-8891-c2571ee478f7" class="">
+</p><p id="18cfdcc8-0be6-80f9-887e-f8f7a3c6103a" class="">Type 1 diabetes - autoimmune reaction against beta cells leads to infiltration of the pancreatic islet by T-cells, destroying the gland</p><p id="18cfdcc8-0be6-8019-bb6d-f27b03163b3d" class="">Type 2 diabetes - pancreatic islet not usually affected</p><p id="18cfdcc8-0be6-808b-b4ca-d86393c5d9e2" class="">
+</p><p id="18cfdcc8-0be6-8039-855d-df645920f1db" class="">Lack of insulin in T1DM - glucose transport and utilisation reduced —&gt; ↑glucose</p><p id="18cfdcc8-0be6-800e-920d-e2feb420d47f" class="">Lack of insulin —&gt; unopposed ↑glucagon</p><p id="18cfdcc8-0be6-8035-9eb6-f8868ab307e4" class="">Effects:</p><ul id="18cfdcc8-0be6-8014-a3d1-fc2d685e793b" class="bulleted-list"><li style="list-style-type:disc">Protein<ul id="18cfdcc8-0be6-80d3-9836-fc0b992be6d0" class="bulleted-list"><li style="list-style-type:circle">↑ Protein breakdown</li></ul></li></ul><ul id="18cfdcc8-0be6-804f-8fe7-cdd997982f12" class="bulleted-list"><li style="list-style-type:disc">Carbs<ul id="18cfdcc8-0be6-80dd-86ad-f6250a463e49" class="bulleted-list"><li style="list-style-type:circle">↑ Glyocogenolysis</li></ul><ul id="18cfdcc8-0be6-8023-8a09-c1a578090c9d" class="bulleted-list"><li style="list-style-type:circle">↑ Gluconeogenesis</li></ul><ul id="18cfdcc8-0be6-8021-976a-c86511775d57" class="bulleted-list"><li style="list-style-type:circle">↑ Hepatic glucose output</li></ul></li></ul><ul id="18cfdcc8-0be6-8065-ab11-cfde9fcc9a8e" class="bulleted-list"><li style="list-style-type:disc">Fats<ul id="18cfdcc8-0be6-8023-8a0f-d292da49093e" class="bulleted-list"><li style="list-style-type:circle">↑ Lipolysis</li></ul><ul id="18cfdcc8-0be6-80d2-ad57-f4a4bda26ab6" class="bulleted-list"><li style="list-style-type:circle">↑ Ketogenesis</li></ul></li></ul><ul id="18cfdcc8-0be6-8054-a329-f48389e28488" class="bulleted-list"><li style="list-style-type:disc">Patient then becomes catabolic and dehydrated because of polyuria<ul id="18cfdcc8-0be6-800f-8b04-f6d99aead994" class="bulleted-list"><li style="list-style-type:circle">This progresses to decompensation, diabetic ketoacidosis, and coma</li></ul></li></ul><p id="18cfdcc8-0be6-8054-9a9f-f72842547386" class="">
+</p><h1 id="18cfdcc8-0be6-800e-93ea-d4d90f2d86bf" class="">Type 2 Diabetes Mellitus</h1><p id="18cfdcc8-0be6-802d-9455-f8be1a866a8b" class="">T2DM is a complex metabolic disorder</p><figure id="18cfdcc8-0be6-8079-8c58-e7d64aca2161" class="image" style="text-align:left"><a href="Pathophysiology%20of%20diabetes%2018cfdcc80be680378488d2d97835873d/Screenshot_2025-01-31_at_13.45.36.png"><img style="width:384px" src="Pathophysiology%20of%20diabetes%2018cfdcc80be680378488d2d97835873d/Screenshot_2025-01-31_at_13.45.36.png"/></a></figure><h2 id="18cfdcc8-0be6-8014-bef0-d8831c2178e8" class="">Insulin resistance</h2><p id="18cfdcc8-0be6-8062-9daa-c786907879b1" class="">Observe commonly that for a given glucose level, pancreas releases more insulin  to control blood sugar</p><p id="18cfdcc8-0be6-8047-9232-efd07caa4974" class="">In the short term, the pancreas can deal with this requirement, and the Islets enlarge. However, eventually it can’t keep up which results in insulin deficiency. </p><figure id="18cfdcc8-0be6-805d-ae05-e0ab2ec6548c" class="image" style="text-align:left"><a href="Pathophysiology%20of%20diabetes%2018cfdcc80be680378488d2d97835873d/Screenshot_2025-01-31_at_13.49.45.png"><img style="width:384px" src="Pathophysiology%20of%20diabetes%2018cfdcc80be680378488d2d97835873d/Screenshot_2025-01-31_at_13.49.45.png"/></a></figure><p id="18cfdcc8-0be6-807a-aae1-da978adfb466" class="">Inflammation seems to be due to accumulation of fat around viscera. Innate immune system recognises that the fat is in the wrong place. Excessive cytokine release, which eventually ends up at the liver and causes insulin resistance. </p><p id="18cfdcc8-0be6-8080-b86b-f61918f6cfc8" class="">
+</p><p id="18cfdcc8-0be6-80da-a1fb-d0e2d016743b" class="">Individual patients may have a mix of:</p><ul id="18cfdcc8-0be6-8003-ac32-fa666603fa20" class="bulleted-list"><li style="list-style-type:disc">Genetic predisposition to obesity</li></ul><ul id="18cfdcc8-0be6-804c-8cbf-cd5722db0e0d" class="bulleted-list"><li style="list-style-type:disc">Epigenetic predisposition </li></ul><ul id="18cfdcc8-0be6-8049-84eb-c39d2f2cf5f7" class="bulleted-list"><li style="list-style-type:disc">Differing abilities to compensate<ul id="18cfdcc8-0be6-80fc-a07c-cda6ff15c7d6" class="bulleted-list"><li style="list-style-type:circle">B-cell proliferation </li></ul><ul id="18cfdcc8-0be6-80a6-bfcc-ebab0f5b3e62" class="bulleted-list"><li style="list-style-type:circle">Adipose tissue inflammatory response</li></ul><ul id="18cfdcc8-0be6-8039-b464-d7cce928ed3e" class="bulleted-list"><li style="list-style-type:circle">Tendency to become insulin resistant</li></ul></li></ul><ul id="18cfdcc8-0be6-8049-9c7f-dba6e6a87e87" class="bulleted-list"><li style="list-style-type:disc">Different environmental exposures<ul id="18cfdcc8-0be6-804e-a8ba-fa0d38dd355c" class="bulleted-list"><li style="list-style-type:circle">Diet, activity</li></ul><ul id="18cfdcc8-0be6-806e-9b3d-e08b88bdf2b8" class="bulleted-list"><li style="list-style-type:circle">Intercurrent illness</li></ul><ul id="18cfdcc8-0be6-807d-8c34-da90fa29bb43" class="bulleted-list"><li style="list-style-type:circle">Exposure to drugs (e.g. steroids)</li></ul><ul id="18cfdcc8-0be6-80e2-a2f4-e2076726bd2d" class="bulleted-list"><li style="list-style-type:circle">Access to healthcare</li></ul></li></ul><h1 id="18cfdcc8-0be6-804e-a55f-fc5e70ddcdd0" class="">Long term effects of diabetes</h1><h2 id="18cfdcc8-0be6-805e-931e-e8ac7a853b7e" class="">Complications of diabetes</h2><ul id="18cfdcc8-0be6-80cb-b381-faa4ae500177" class="bulleted-list"><li style="list-style-type:disc">Increased incidence of CVD</li></ul><ul id="18cfdcc8-0be6-80a8-867a-e2905aeb6457" class="bulleted-list"><li style="list-style-type:disc">Peripheral vascular disease</li></ul><ul id="18cfdcc8-0be6-801e-9a10-e28e6af83fd0" class="bulleted-list"><li style="list-style-type:disc">Renal disease</li></ul><ul id="18cfdcc8-0be6-8022-8d9d-f972adf94846" class="bulleted-list"><li style="list-style-type:disc">Retinal disease</li></ul><ul id="18cfdcc8-0be6-805a-9497-dfb39b6c2e9c" class="bulleted-list"><li style="list-style-type:disc">Lens opacity (cataracts)</li></ul><ul id="18cfdcc8-0be6-803f-b0f4-efae81c87646" class="bulleted-list"><li style="list-style-type:disc">Neuropathy<ul id="18cfdcc8-0be6-802a-94a2-f1acf7c03ccf" class="bulleted-list"><li style="list-style-type:circle">Autonomic (bladder, stomach, blood vessels, erections)</li></ul><ul id="18cfdcc8-0be6-80ad-88ab-e631dc2a4c72" class="bulleted-list"><li style="list-style-type:circle">Sensory</li></ul><ul id="18cfdcc8-0be6-8033-91eb-ee432776a7c1" class="bulleted-list"><li style="list-style-type:circle">Motor</li></ul></li></ul><ul id="18cfdcc8-0be6-80a1-9698-db91952f6cdb" class="bulleted-list"><li style="list-style-type:disc">Skin infections</li></ul><ul id="18cfdcc8-0be6-809c-8917-ca713d4425d3" class="bulleted-list"><li style="list-style-type:disc">Osteoarthritis </li></ul><p id="18cfdcc8-0be6-80a2-b9c2-c52dfef535a6" class="">
+</p><h2 id="18cfdcc8-0be6-801c-be16-e904e1a4ec52" class="">Glycation pathway</h2><figure id="18cfdcc8-0be6-8094-a3ca-e6f4b66baa34" class="image"><a href="Pathophysiology%20of%20diabetes%2018cfdcc80be680378488d2d97835873d/Screenshot_2025-01-31_at_13.57.45.png"><img style="width:639px" src="Pathophysiology%20of%20diabetes%2018cfdcc80be680378488d2d97835873d/Screenshot_2025-01-31_at_13.57.45.png"/></a></figure><p id="18cfdcc8-0be6-8036-9fd7-cd61d54ca5e2" class="">AGEs (end product) used to measure average blood sugar using HbA1c, as haemoglobin is particularly susceptible to glycation with sugar</p><p id="18cfdcc8-0be6-80fe-813d-d601cb38b818" class="">
+</p><ul id="18cfdcc8-0be6-8047-8b88-da6ce93779a5" class="bulleted-list"><li style="list-style-type:disc">Excess glucose increases Hb glucation</li></ul><ul id="18cfdcc8-0be6-80df-b06e-ffb9d66e5d7e" class="bulleted-list"><li style="list-style-type:disc">We use HbA1c as an easily accessible measure of glycaemia over past 90 days (RBC lifespan)</li></ul><p id="18cfdcc8-0be6-8010-8ae1-e18806bf6e97" class="">
+</p><figure id="18cfdcc8-0be6-802f-b0d1-dcb62c4c2d25" class="image"><a href="Pathophysiology%20of%20diabetes%2018cfdcc80be680378488d2d97835873d/Screenshot_2025-01-31_at_14.00.33.png"><img style="width:639px" src="Pathophysiology%20of%20diabetes%2018cfdcc80be680378488d2d97835873d/Screenshot_2025-01-31_at_14.00.33.png"/></a></figure><p id="18cfdcc8-0be6-808a-8fe9-ead2ab21fdd6" class="">
+</p><p id="18cfdcc8-0be6-80d8-ba26-f79caf85dffa" class="">When a cell is exposed to a high level of glucose, it starts making free oxygen radicals, increasing oxidative stress.</p><p id="18cfdcc8-0be6-8046-b0d2-ef0c0a0082a1" class="">
+</p><p id="18cfdcc8-0be6-8097-bdaf-e5daf7c37cc3" class="">Oxidative stress refers to the fact that during metabolism many reactions involve oxidation which need free radicals (ROSs like O2-, H2O2). </p><p id="18cfdcc8-0be6-8065-a7c3-e68f2323d86b" class="">Catalase breaks down H2O2 into H2O and O2.</p><p id="18cfdcc8-0be6-80da-8651-de389fe7b1cc" class="">If ROS not removed sufficiently, oxidative damage in DNA, proteins, and lipids caused.</p><p id="18cfdcc8-0be6-8061-89be-da35dc6474e5" class="">
+</p><h2 id="18cfdcc8-0be6-8059-b03c-d89015d8daa8" class="">Sorbitol pathway</h2><p id="18cfdcc8-0be6-80ca-93c2-f97ae231e4fa" class="">When glucose levels are high, sorbitol and fructose accumulate in cells since they diffuse relatively slowly. </p><p id="18cfdcc8-0be6-8098-b0d8-e0245e1e96ff" class="">This causes osmotic effects which may damage cells such as lens and nerve cells. </p><p id="18cfdcc8-0be6-80e6-b89e-fc2fba0e46ba" class="">
+</p><h2 id="18cfdcc8-0be6-806a-a222-d0718a846a47" class="">How are the complications caused?</h2><ul id="18cfdcc8-0be6-80a5-8318-c6b3de5656bb" class="bulleted-list"><li style="list-style-type:disc">Retinopathy: glycation of basement membrane (BM), exudation, bleeding</li></ul><ul id="18cfdcc8-0be6-808e-8bd3-fb237090b4db" class="bulleted-list"><li style="list-style-type:disc">Cataracts: accumulation of polyols (sorbitol) in lens</li></ul><ul id="18cfdcc8-0be6-8066-8fad-d24457d3f95c" class="bulleted-list"><li style="list-style-type:disc">Neuropathy: glycation of BM —&gt; blood supply to nerve blocked + leakage of protein</li></ul><ul id="18cfdcc8-0be6-807c-b900-d494f5f53d3c" class="bulleted-list"><li style="list-style-type:disc">Skin infections: poor blood supply leads to poor healing, high glucose levels encourage pathogenic growth</li></ul><h3 id="18cfdcc8-0be6-8033-bbb0-ddf3acffb9aa" class="">Kidneys</h3><p id="18cfdcc8-0be6-8028-883b-df18ecb926e6" class="">Thickened basement membrane in blood vessels and increased permeability to blood proteins —&gt; leads to nephropathy</p><h3 id="18cfdcc8-0be6-809d-b4a4-e80a5e2c29d0" class="">Foot infections</h3><p id="18cfdcc8-0be6-80ba-8b95-c630600d21b4" class="">High glucose levels make a rich medium for organisms infecting the skin</p><p id="18cfdcc8-0be6-80e9-b0b9-da95b043f4ed" class="">Contributed to by damage to blood vessels</p><p id="18cfdcc8-0be6-8060-b203-d47237442c29" class="">Sensory neuropathy leads to foot numbness and damage</p><h3 id="18cfdcc8-0be6-803e-b183-c38531344b99" class="">Cardiovascular disease</h3><p id="18cfdcc8-0be6-80db-ad90-ca76bc18cf31" class="">Risk of CVD greater in patients with diabetes</p><p id="18cfdcc8-0be6-808b-a7a8-f7978d2c2bea" class="">Up to 80% of people with diabetes will die from CVD</p><ul id="18cfdcc8-0be6-80ab-8777-f622d34c2bdf" class="bulleted-list"><li style="list-style-type:disc">preventable deaths if action is taken</li></ul><p id="18cfdcc8-0be6-8069-9c6e-c9d3c8c5b603" class="">
+</p><p id="18cfdcc8-0be6-80c4-b7a5-c921bbd7465a" class="">Diabetes accelerates atherosclerosis:</p><ul id="18cfdcc8-0be6-80cc-b048-fc8a8b505034" class="bulleted-list"><li style="list-style-type:disc">higher oxidative stress</li></ul><ul id="18cfdcc8-0be6-80a7-a0af-e4f3af78dd17" class="bulleted-list"><li style="list-style-type:disc">causes higher cholesterol</li></ul><ul id="18cfdcc8-0be6-8067-9969-f2b5b5463c11" class="bulleted-list"><li style="list-style-type:disc">more inflammation</li></ul><h3 id="18cfdcc8-0be6-804d-bd9f-e50f2f5558ae" class="">Optimum blood sugar control</h3><ul id="18cfdcc8-0be6-8028-918a-c60319a050d7" class="bulleted-list"><li style="list-style-type:disc">‘Normal’ HbA1c is &lt;6.5% (&lt;48 mmol/mol)<ul id="18cfdcc8-0be6-8012-a591-d134ca051aba" class="bulleted-list"><li style="list-style-type:circle">this is difficult to achieve without causing hypos</li></ul><ul id="18cfdcc8-0be6-80ed-b5e8-ca310eedebdd" class="bulleted-list"><li style="list-style-type:circle">associated with more mortality</li></ul></li></ul><ul id="18cfdcc8-0be6-807e-8dd9-cca2d040489a" class="bulleted-list"><li style="list-style-type:disc">Aim for 6.5-7.5% (48-59 mmol/mol)</li></ul><ul id="18cfdcc8-0be6-80b3-ae95-f65454b20626" class="bulleted-list"><li style="list-style-type:disc">Quality of life paramount</li></ul><h1 id="18cfdcc8-0be6-809d-b547-cae29bc99493" class="">Conclusions</h1><figure id="18cfdcc8-0be6-802e-9b85-dc2829749e93" class="image"><a href="Pathophysiology%20of%20diabetes%2018cfdcc80be680378488d2d97835873d/Screenshot_2025-01-31_at_14.19.57.png"><img style="width:639px" src="Pathophysiology%20of%20diabetes%2018cfdcc80be680378488d2d97835873d/Screenshot_2025-01-31_at_14.19.57.png"/></a></figure></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

@@ -1,0 +1,695 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>[019] The normal thyroid axis</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.highlight-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.block-color-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: undefined; }
+.select-value-color-pink { background-color: rgba(225, 136, 179, 0.27); }
+.select-value-color-purple { background-color: rgba(168, 129, 197, 0.27); }
+.select-value-color-green { background-color: rgba(123, 183, 129, 0.27); }
+.select-value-color-gray { background-color: rgba(84, 72, 49, 0.15); }
+.select-value-color-transparentGray { background-color: undefined; }
+.select-value-color-translucentGray { background-color: undefined; }
+.select-value-color-orange { background-color: rgba(224, 124, 57, 0.27); }
+.select-value-color-brown { background-color: rgba(210, 162, 141, 0.35); }
+.select-value-color-red { background-color: rgba(244, 171, 159, 0.4); }
+.select-value-color-yellow { background-color: rgba(236, 191, 66, 0.39); }
+.select-value-color-blue { background-color: rgba(93, 165, 206, 0.27); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="18ffdcc8-0be6-8032-87ca-cf870818b274" class="page sans"><header><h1 class="page-title"><strong>[019] The normal thyroid axis</strong></h1><p class="page-description"></p></header><div class="page-body"><h1 id="18ffdcc8-0be6-8085-99a0-f580140b5175" class="">ILOs</h1><ul id="18ffdcc8-0be6-8042-a4d4-fa2611540a10" class="bulleted-list"><li style="list-style-type:disc">describe, with the aid of diagrams, the gross morphology of the thyroid gland</li></ul><hr id="18ffdcc8-0be6-805a-a9af-cc4a4f4589a6"/><ul id="18ffdcc8-0be6-8021-8a5d-ea0b6b2f0c92" class="bulleted-list"><li style="list-style-type:disc">describe and sketch the structure of thyroid follicles</li></ul><hr id="18ffdcc8-0be6-8085-8076-f9148cc1a793"/><ul id="18ffdcc8-0be6-8077-a23e-db8f9bdb8c8e" class="bulleted-list"><li style="list-style-type:disc">relate the follicle to the biosynthesis of T3 and T4</li></ul><hr id="18ffdcc8-0be6-8033-a98c-dbaf6d4e1f60"/><ul id="18ffdcc8-0be6-80e6-a3b1-e2fc1550b7f3" class="bulleted-list"><li style="list-style-type:disc">list and describe circulating binding proteins</li></ul><hr id="18ffdcc8-0be6-8061-b5d5-e122905ab761"/><ul id="18ffdcc8-0be6-8002-87fd-cf4e2301b106" class="bulleted-list"><li style="list-style-type:disc">explain why T4 may be considered a prohormone</li></ul><hr id="18ffdcc8-0be6-80a2-bff7-faea3176eb03"/><h1 id="18ffdcc8-0be6-809c-812e-d81f1f0a5b21" class="">Thyroid structure</h1><ul id="18ffdcc8-0be6-8027-bfde-db12b5f42887" class="bulleted-list"><li style="list-style-type:disc">Gland wraps around trachea</li></ul><ul id="18ffdcc8-0be6-80cb-b4f3-eafe2aeaef51" class="bulleted-list"><li style="list-style-type:disc">Receives blood supply from thyrocervical trunk and external carotid artery</li></ul><ul id="18ffdcc8-0be6-8019-9804-ed90b4cb6703" class="bulleted-list"><li style="list-style-type:disc">Middle connected by isthmus, with optional pyramidal lobe</li></ul><figure id="18ffdcc8-0be6-809b-bf2f-f423a7aa62fc" class="image"><a href="%5B019%5D%20The%20normal%20thyroid%20axis%2018ffdcc80be6803287cacf870818b274/Screenshot_2025-02-03_at_09.12.47.png"><img style="width:638px" src="%5B019%5D%20The%20normal%20thyroid%20axis%2018ffdcc80be6803287cacf870818b274/Screenshot_2025-02-03_at_09.12.47.png"/></a></figure><ul id="18ffdcc8-0be6-803e-8351-d1eef6ef9c4e" class="bulleted-list"><li style="list-style-type:disc">4 parathyroid glands that sense Ca2+ and secrete PTH</li></ul><h2 id="18ffdcc8-0be6-8053-b731-c1d687c97dcd" class="">Morphology</h2><figure id="18ffdcc8-0be6-80ec-b68a-c365c08ae443" class="image"><a href="%5B019%5D%20The%20normal%20thyroid%20axis%2018ffdcc80be6803287cacf870818b274/Screenshot_2025-02-03_at_09.15.14.png"><img style="width:638px" src="%5B019%5D%20The%20normal%20thyroid%20axis%2018ffdcc80be6803287cacf870818b274/Screenshot_2025-02-03_at_09.15.14.png"/></a></figure><figure id="18ffdcc8-0be6-80b4-9156-c08fc9014d5b" class="image"><a href="%5B019%5D%20The%20normal%20thyroid%20axis%2018ffdcc80be6803287cacf870818b274/Screenshot_2025-02-03_at_09.15.35.png"><img style="width:638px" src="%5B019%5D%20The%20normal%20thyroid%20axis%2018ffdcc80be6803287cacf870818b274/Screenshot_2025-02-03_at_09.15.35.png"/></a></figure><h2 id="18ffdcc8-0be6-8005-a392-c74de47f11c4" class="">Embryological abnormalities</h2><div id="18ffdcc8-0be6-8066-a2db-fa8413d2eff5" class="column-list"><div id="18ffdcc8-0be6-8094-9194-d0600340dafd" style="width:50%" class="column"><ul id="18ffdcc8-0be6-8004-a9fc-cb4a492809be" class="bulleted-list"><li style="list-style-type:disc">Failure of gland to develop e.g. PAX8 mutation —&gt; congenital hypothyroidism </li></ul><ul id="18ffdcc8-0be6-8059-8d70-fd7d40fe690f" class="bulleted-list"><li style="list-style-type:disc">Migration of thyroid —&gt; lingual, retrosternal thyroid</li></ul><ul id="18ffdcc8-0be6-80a3-b4db-f495ce0ffe44" class="bulleted-list"><li style="list-style-type:disc">Failure of thyroglossal dict to atrophy —&gt; thyroglossal cyst</li></ul><p id="18ffdcc8-0be6-80e7-8578-f01c07a761ee" class="">
+</p></div><div id="18ffdcc8-0be6-80e1-ae98-f909eb1bde6e" style="width:50%" class="column"><figure id="18ffdcc8-0be6-808b-af86-fac759d8ef65" class="image"><a href="%5B019%5D%20The%20normal%20thyroid%20axis%2018ffdcc80be6803287cacf870818b274/Screenshot_2025-02-03_at_09.19.06.png"><img style="width:295px" src="%5B019%5D%20The%20normal%20thyroid%20axis%2018ffdcc80be6803287cacf870818b274/Screenshot_2025-02-03_at_09.19.06.png"/></a></figure></div></div><h1 id="18ffdcc8-0be6-80af-8110-fc50d5f464f7" class="">Thyroid hormones</h1><h2 id="18ffdcc8-0be6-8043-8bcc-e5c4b9ae645f" class="">Synthesis</h2><ul id="18ffdcc8-0be6-807b-8332-e36a2cafe0f8" class="bulleted-list"><li style="list-style-type:disc">Two thyroid follicles - T4, T3</li></ul><ul id="18ffdcc8-0be6-809a-961d-ca3eac5eec00" class="bulleted-list"><li style="list-style-type:disc">C-cells - calcitonin</li></ul><h3 id="18ffdcc8-0be6-80d8-a973-d37d14086fa2" class="">Calcitonin</h3><ul id="18ffdcc8-0be6-80e9-8cd3-c0d9c4bb3e3c" class="bulleted-list"><li style="list-style-type:disc">peptide hormone </li></ul><ul id="18ffdcc8-0be6-8059-937d-ffa42bad0b85" class="bulleted-list"><li style="list-style-type:disc">antagonises PTH: ↓Ca</li></ul><ul id="18ffdcc8-0be6-8075-aefc-e26b2b524d48" class="bulleted-list"><li style="list-style-type:disc">Probably not significant in human Ca metabolism</li></ul><p id="18ffdcc8-0be6-804e-b149-cc0df86659b8" class="">
+</p><h2 id="18ffdcc8-0be6-805a-86d4-fa6c3089e1b9" class="">TSH-R Stimulation</h2><ul id="18ffdcc8-0be6-8049-b721-f1481def136e" class="bulleted-list"><li style="list-style-type:disc">↑ cAMP via GSɑ/adenylate cyclase</li></ul><ul id="18ffdcc8-0be6-80e2-a815-cacd3280346a" class="bulleted-list"><li style="list-style-type:disc">↑ DNA synthesis</li></ul><ul id="18ffdcc8-0be6-8073-9323-dd566f0e3874" class="bulleted-list"><li style="list-style-type:disc">↑ Protein synthesis<ul id="18ffdcc8-0be6-80c3-ba21-f968567e4f66" class="bulleted-list"><li style="list-style-type:circle">including thyroglobulin</li></ul></li></ul><ul id="18ffdcc8-0be6-80fe-9557-c467c4d675e1" class="bulleted-list"><li style="list-style-type:disc">↑ Iodide influx into the cell via NIS (sodium-iodide symporter)</li></ul><ul id="18ffdcc8-0be6-80f0-9fd1-daefc8ea917e" class="bulleted-list"><li style="list-style-type:disc">↑ Thyroid hormone synthesis<ul id="18ffdcc8-0be6-8036-b4b5-fc903239efcc" class="bulleted-list"><li style="list-style-type:circle">↑ iodination of thyroglobulin </li></ul><ul id="18ffdcc8-0be6-8008-b99a-fe440c2ce14e" class="bulleted-list"><li style="list-style-type:circle">↑ microvilli number and length at luminal cell surface</li></ul><ul id="18ffdcc8-0be6-80a2-a806-d92f3ab55227" class="bulleted-list"><li style="list-style-type:circle">↑ in intracellular volume and endocytosis of colloid droplets</li></ul></li></ul><ul id="18ffdcc8-0be6-8013-b341-c1cf217ffba4" class="bulleted-list"><li style="list-style-type:disc">↑ Thyroid hormone release</li></ul><h2 id="18ffdcc8-0be6-800b-a1de-f50784d49e70" class="">Thyroid hormone raw materials</h2><ul id="18ffdcc8-0be6-80d6-a061-eb10637034fa" class="bulleted-list"><li style="list-style-type:disc">Tyrosines<ul id="18ffdcc8-0be6-8079-bb16-e78febe64cf0" class="bulleted-list"><li style="list-style-type:circle">Glycoprotein scaffold called thyroglobulin (1 thyroglbulin = 134 tyrosines)</li></ul><ul id="18ffdcc8-0be6-808d-9090-dd2224dd2d3b" class="bulleted-list"><li style="list-style-type:circle">Synthesised by thyroid epithelial cells and secreted into lumen</li></ul><ul id="18ffdcc8-0be6-8075-af4c-c01b63b024c3" class="bulleted-list"><li style="list-style-type:circle">Colloid is a pool of thyroglobulin</li></ul></li></ul><ul id="18ffdcc8-0be6-803d-9519-c52ec443977f" class="bulleted-list"><li style="list-style-type:disc">Iodide<ul id="18ffdcc8-0be6-8036-b43e-f0945b41eaaa" class="bulleted-list"><li style="list-style-type:circle">Avidly taken up by thyroid epithelial cells</li></ul><ul id="18ffdcc8-0be6-80c4-a295-ed22465e0839" class="bulleted-list"><li style="list-style-type:circle">Via sodium-iodide symporter</li></ul><ul id="18ffdcc8-0be6-8089-af48-d57e40b2c6d1" class="bulleted-list"><li style="list-style-type:circle">Once inside the cell, iodide is transported into the lumen of the follicle along with thyroglobulin via pendrin</li></ul></li></ul><p id="18ffdcc8-0be6-80de-b37f-fc50846793c4" class="">
+</p><h2 id="18ffdcc8-0be6-80e3-867e-c36463dcc25f" class="">Thyroid peroxidase</h2><ul id="18ffdcc8-0be6-80c8-b535-c948a70286aa" class="bulleted-list"><li style="list-style-type:disc">Synthesises thyroid hormones</li></ul><ul id="18ffdcc8-0be6-80cd-ae1c-ddfd39af6413" class="bulleted-list"><li style="list-style-type:disc">Two sequential reactions:<ul id="18ffdcc8-0be6-8047-9c86-e87afca30f0c" class="bulleted-list"><li style="list-style-type:circle">Organification</li></ul><ul id="18ffdcc8-0be6-8082-ba9b-c08f2be6fdd1" class="bulleted-list"><li style="list-style-type:circle">Coupling</li></ul></li></ul><h3 id="18ffdcc8-0be6-80bb-8076-feb47ccf4a28" class="">Organification</h3><figure id="18ffdcc8-0be6-80b6-a64d-c60283edb114" class="image"><a href="%5B019%5D%20The%20normal%20thyroid%20axis%2018ffdcc80be6803287cacf870818b274/Screenshot_2025-02-03_at_09.30.42.png"><img style="width:638px" src="%5B019%5D%20The%20normal%20thyroid%20axis%2018ffdcc80be6803287cacf870818b274/Screenshot_2025-02-03_at_09.30.42.png"/></a></figure><h3 id="18ffdcc8-0be6-8074-9f6d-f7b98a08d5f1" class="">Coupling</h3><figure id="18ffdcc8-0be6-80bd-8d20-eda343368a14" class="image" style="text-align:left"><a href="%5B019%5D%20The%20normal%20thyroid%20axis%2018ffdcc80be6803287cacf870818b274/Screenshot_2025-02-03_at_09.31.05.png"><img style="width:288px" src="%5B019%5D%20The%20normal%20thyroid%20axis%2018ffdcc80be6803287cacf870818b274/Screenshot_2025-02-03_at_09.31.05.png"/></a></figure><h3 id="18ffdcc8-0be6-8090-85db-c9c1eb3b91a9" class="">Whole process</h3><figure id="18ffdcc8-0be6-80a9-8c08-fc24d70e3a97" class="image" style="text-align:left"><a href="%5B019%5D%20The%20normal%20thyroid%20axis%2018ffdcc80be6803287cacf870818b274/Screenshot_2025-02-03_at_09.32.08.png"><img style="width:576px" src="%5B019%5D%20The%20normal%20thyroid%20axis%2018ffdcc80be6803287cacf870818b274/Screenshot_2025-02-03_at_09.32.08.png"/></a></figure><h2 id="18ffdcc8-0be6-800b-ad01-c9999d8d3c7e" class="">Hormones in circulation </h2><ul id="18ffdcc8-0be6-8033-8274-d07155b54bf3" class="bulleted-list"><li style="list-style-type:disc">Secretion stimulated by TSH</li></ul><ul id="18ffdcc8-0be6-8093-ad52-c4fbe1a2d3d3" class="bulleted-list"><li style="list-style-type:disc">Normal ranges:<ul id="18ffdcc8-0be6-8083-b99f-d6872708e957" class="bulleted-list"><li style="list-style-type:circle">TSH = 0.3 - 4.5 mU/L</li></ul><ul id="18ffdcc8-0be6-80e8-baca-e6ccdd03d0bc" class="bulleted-list"><li style="list-style-type:circle">Tota T4 = 60 - 150 nmol/L</li></ul><ul id="18ffdcc8-0be6-80d5-868c-ea6ef06a42b9" class="bulleted-list"><li style="list-style-type:circle">Total T3 = 1.2 - 2.9 nmol/L</li></ul></li></ul><p id="18ffdcc8-0be6-80fe-a0df-c6e9e22d4b6e" class="">
+</p><p id="18ffdcc8-0be6-8071-ba19-feffb529bf8f" class="">99.9% of T3/T4 transported bound to 3 binding proteins:</p><ul id="18ffdcc8-0be6-8013-82d7-f9b0295e1e14" class="bulleted-list"><li style="list-style-type:disc">Thyroxine binding protein (TBG) 75%<ul id="18ffdcc8-0be6-805b-9889-f4ea4c058778" class="bulleted-list"><li style="list-style-type:circle">Binds both T3 and T4</li></ul></li></ul><ul id="18ffdcc8-0be6-80f9-8bd1-ce7d1490732a" class="bulleted-list"><li style="list-style-type:disc">Transthyreitin 20%</li></ul><ul id="18ffdcc8-0be6-80b0-90b1-c3178247b1dd" class="bulleted-list"><li style="list-style-type:disc">Albumin 5%</li></ul><ul id="18ffdcc8-0be6-80c7-9754-c2a4fa11c174" class="bulleted-list"><li style="list-style-type:disc">Only 0.1% is free (can access thyroid hormone receptors)</li></ul><p id="18ffdcc8-0be6-806c-acc4-c9ddc133628c" class="">
+</p><h2 id="18ffdcc8-0be6-8005-8663-ccc85450f3a5" class="">Physiological actions</h2><ol type="1" id="18ffdcc8-0be6-8034-9369-db858fb0506b" class="numbered-list" start="1"><li>Increase basal metabolism</li></ol><ol type="1" id="18ffdcc8-0be6-8090-b378-ed28ea6ca82b" class="numbered-list" start="2"><li>Promote growth and development</li></ol><ol type="1" id="18ffdcc8-0be6-800c-a9ae-f5fcfaf24f57" class="numbered-list" start="3"><li>Cardiovascular<ul id="18ffdcc8-0be6-802f-8146-f6d03ecc1c77" class="bulleted-list"><li style="list-style-type:disc">Positively chronotropic, inotropic</li></ul></li></ol><ol type="1" id="18ffdcc8-0be6-80ab-af1f-da5d37658755" class="numbered-list" start="4"><li>CNS<ul id="18ffdcc8-0be6-8089-9b11-d527105b1a57" class="bulleted-list"><li style="list-style-type:disc">Regulates alertness</li></ul><ul id="18ffdcc8-0be6-8062-bd76-f57b4e8a0a3f" class="bulleted-list"><li style="list-style-type:disc">Development of foetal brain</li></ul></li></ol><ol type="1" id="18ffdcc8-0be6-80b7-ab29-fdd185b75891" class="numbered-list" start="5"><li>Modulate actions of other hormones</li></ol><p id="18ffdcc8-0be6-805b-9d14-e2ba4ce0bdf5" class="">
+</p><h2 id="18ffdcc8-0be6-80f5-aaff-cfa769ea97b1" class="">Deiodination</h2><p id="18ffdcc8-0be6-802c-a0ad-e187d434d7c7" class="">T4 is a pro hormone for T3</p><ul id="18ffdcc8-0be6-80de-8443-d22fc55281d5" class="bulleted-list"><li style="list-style-type:disc">T4 deiodinated to T3</li></ul><ul id="18ffdcc8-0be6-8028-84ef-dd5d0b4effb2" class="bulleted-list"><li style="list-style-type:disc">T3 acts on nuclear receptors</li></ul><h1 id="18ffdcc8-0be6-805c-af6a-e8b69391ef55" class="">Thyroid receptors</h1><ul id="18ffdcc8-0be6-804e-9243-e0cd80acd863" class="bulleted-list"><li style="list-style-type:disc">Nuclear receptors<ul id="18ffdcc8-0be6-802c-9e7b-e0616564815e" class="bulleted-list"><li style="list-style-type:circle">members of steroid-thyroid hormone receptor superfamily</li></ul><ul id="18ffdcc8-0be6-806b-a6ee-e0fb725e07e5" class="bulleted-list"><li style="list-style-type:circle">bound to DNA in their resting state</li></ul></li></ul><ul id="18ffdcc8-0be6-80f6-b0c4-f4aa9627f369" class="bulleted-list"><li style="list-style-type:disc">Bind to TR response elements (TREs)</li></ul><p id="18ffdcc8-0be6-80d7-b654-d2c9e3fe3760" class="">
+</p><h2 id="18ffdcc8-0be6-809d-98ce-eb0daf431d78" class="">Control of transcription</h2><figure id="18ffdcc8-0be6-805c-80f5-d0c65a6874fa" class="image"><a href="%5B019%5D%20The%20normal%20thyroid%20axis%2018ffdcc80be6803287cacf870818b274/Screenshot_2025-02-03_at_09.45.40.png"><img style="width:638px" src="%5B019%5D%20The%20normal%20thyroid%20axis%2018ffdcc80be6803287cacf870818b274/Screenshot_2025-02-03_at_09.45.40.png"/></a></figure><p id="18ffdcc8-0be6-800e-a1f8-e3b2275a86c8" class="">A: When no T3, TR recruits and binds corepressors to signal to histones to close up so no transcription (gene off)</p><p id="18ffdcc8-0be6-8093-aa27-c4eca8986254" class="">
+</p><p id="18ffdcc8-0be6-80cf-bf84-f06048630e27" class="">C: If no TR bound to TRE (or T3), there can be some transcription going through gene (base metabolism) —&gt; (gene “half on”)</p><h2 id="18ffdcc8-0be6-80b9-b5ee-f7123c24c0eb" class="">Types of TR</h2><div id="18ffdcc8-0be6-8055-9ba0-ecd07019fe43" class="column-list"><div id="18ffdcc8-0be6-80b0-883a-cd859751bbae" style="width:37.5%" class="column"><ul id="18ffdcc8-0be6-8093-87c0-cb335053b4c5" class="bulleted-list"><li style="list-style-type:disc">Two genes<ul id="18ffdcc8-0be6-8031-a3c0-e22fb898b26c" class="bulleted-list"><li style="list-style-type:circle">TRɑ</li></ul><ul id="18ffdcc8-0be6-8080-b5a6-cae93627e87a" class="bulleted-list"><li style="list-style-type:circle">TRβ</li></ul></li></ul><ul id="18ffdcc8-0be6-80d3-aed8-db0b735d6ad6" class="bulleted-list"><li style="list-style-type:disc">Each can be selectively spliced<ul id="18ffdcc8-0be6-80d2-85bd-f69e4235429c" class="bulleted-list"><li style="list-style-type:circle">TRɑ1,2</li></ul><ul id="18ffdcc8-0be6-804e-b20d-d35672b79507" class="bulleted-list"><li style="list-style-type:circle">TRβ1,2</li></ul></li></ul><ul id="18ffdcc8-0be6-80c4-9e80-d4fc95db9cad" class="bulleted-list"><li style="list-style-type:disc">Tissue specific</li></ul></div><div id="18ffdcc8-0be6-8053-a2cb-f80fa6c679a5" style="width:62.5%" class="column"><figure id="18ffdcc8-0be6-80c0-b89a-f2788467d837" class="image"><a href="%5B019%5D%20The%20normal%20thyroid%20axis%2018ffdcc80be6803287cacf870818b274/Screenshot_2025-02-03_at_09.50.38.png"><img style="width:480px" src="%5B019%5D%20The%20normal%20thyroid%20axis%2018ffdcc80be6803287cacf870818b274/Screenshot_2025-02-03_at_09.50.38.png"/></a></figure><p id="18ffdcc8-0be6-8071-b665-daaf749448a5" class="">
+</p></div></div><h2 id="18ffdcc8-0be6-80d9-a08b-fd098f300203" class="">T3 effect on mitochondria</h2><ul id="18ffdcc8-0be6-8068-90b8-e78efbad872d" class="bulleted-list"><li style="list-style-type:disc">Mitochondria has its own transcription machinery</li></ul><ul id="18ffdcc8-0be6-8014-9d77-c2283ddbcc21" class="bulleted-list"><li style="list-style-type:disc">Thyroid hormone receptor binds to mitochondria as thyroid hormone controls basal metabolism </li></ul><p id="18ffdcc8-0be6-80a2-b4a1-fd08a81a5b4b" class="">Effects:</p><figure id="18ffdcc8-0be6-8070-9f49-e2a8981d2f30" class="image"><a href="%5B019%5D%20The%20normal%20thyroid%20axis%2018ffdcc80be6803287cacf870818b274/Screenshot_2025-02-03_at_09.52.59.png"><img style="width:638px" src="%5B019%5D%20The%20normal%20thyroid%20axis%2018ffdcc80be6803287cacf870818b274/Screenshot_2025-02-03_at_09.52.59.png"/></a></figure><p id="18ffdcc8-0be6-80f8-b7f2-cb4f00101122" class="">
+</p><h1 id="18ffdcc8-0be6-8089-8740-ca98b28b1a97" class="">Summary</h1><figure id="18ffdcc8-0be6-804d-aed6-fae88a859f22" class="image"><a href="%5B019%5D%20The%20normal%20thyroid%20axis%2018ffdcc80be6803287cacf870818b274/18678794-1f92-4d4d-84a3-2d2d0c80636f.png"><img style="width:624px" src="%5B019%5D%20The%20normal%20thyroid%20axis%2018ffdcc80be6803287cacf870818b274/18678794-1f92-4d4d-84a3-2d2d0c80636f.png"/></a></figure><p id="18ffdcc8-0be6-80cb-9f15-f5c330bb9ae9" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
